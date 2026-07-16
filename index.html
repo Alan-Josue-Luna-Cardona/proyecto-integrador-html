@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Integrador - TechSolutions</title>
+</head>
+<body>
+
+  <header>
+    <p class="logo"><strong>TechSolutions</strong></p>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" aria-labelledby="hero-titulo">
+      <h1 id="hero-titulo">Soluciones tecnológicas para tu negocio</h1>
+      <p>
+        En TechSolutions te ayudamos a digitalizar tus procesos con herramientas
+        modernas, seguras y fáciles de usar. Este proyecto integrador presenta
+        nuestros servicios, productos y formas de contacto en una sola plataforma.
+      </p>
+    </section>
+
+    <section id="servicios" aria-labelledby="servicios-titulo">
+      <h2 id="servicios-titulo">Nuestros servicios</h2>
+
+      <article>
+        <h3>Desarrollo Web</h3>
+        <p>Creamos sitios y aplicaciones web modernas, responsivas y accesibles para cualquier tipo de negocio.</p>
+      </article>
+
+      <article>
+        <h3>Soporte Técnico</h3>
+        <p>Brindamos asistencia técnica remota y presencial para resolver incidencias de manera rápida y eficiente.</p>
+      </article>
+
+      <article>
+        <h3>Consultoría en Sistemas</h3>
+        <p>Analizamos tus procesos actuales y proponemos mejoras tecnológicas adaptadas a tus necesidades.</p>
+      </article>
+
+    </section>
+
+    <section id="productos" aria-labelledby="productos-titulo">
+      <h2 id="productos-titulo">Productos destacados</h2>
+
+      <article>
+        <h3>Sistema de Reservas</h3>
+        <p>Plataforma para gestionar reservas de salas y recursos de forma automatizada y sincronizada.</p>
+      </article>
+
+      <article>
+        <h3>Panel de Reportes</h3>
+        <p>Dashboard interactivo para visualizar métricas clave del negocio en tiempo real.</p>
+      </article>
+
+      <article>
+        <h3>Gestor de Inventario</h3>
+        <p>Herramienta para controlar existencias, entradas y salidas de productos de manera sencilla.</p>
+      </article>
+
+    </section>
+
+    <aside aria-labelledby="aside-titulo">
+      <h2 id="aside-titulo">Noticias y enlaces relacionados</h2>
+      <ul>
+        <li><a href="#servicios">Conoce nuestros nuevos servicios de consultoría</a></li>
+        <li><a href="#productos">Descubre el nuevo Panel de Reportes</a></li>
+        <li><a href="#contacto">Agenda una asesoría gratuita</a></li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <footer id="contacto">
+    <h2>Contacto</h2>
+    <address>
+      Correo: <a href="mailto:contacto@techsolutions.com">contacto@techsolutions.com</a><br>
+      Teléfono: <a href="tel:+50212345678">+502 1234-5678</a><br>
+      Jutiapa, Guatemala
+    </address>
+    <p>&copy; <span id="anio"></span> TechSolutions - Proyecto Integrador</p>
+  </footer>
+
+  <script>
+    document.getElementById("anio").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
