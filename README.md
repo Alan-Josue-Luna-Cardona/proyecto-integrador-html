@@ -7,7 +7,7 @@
 
 ## Validación W3C
 
-
+![alt text](image.png)
 
 
 ## Enlace del proyecto

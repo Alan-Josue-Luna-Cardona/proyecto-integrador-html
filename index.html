@@ -4,91 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto Integrador - TechSolutions</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <p class="logo"><strong>TechSolutions</strong></p>
-    <nav aria-label="Navegación principal">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+  <header class="header">
+    <p class="header__logo"><strong>TechSolutions</strong></p>
+    <nav class="header__nav" aria-label="Navegación principal">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#inicio">Inicio</a></li>
+        <li class="nav__item"><a class="nav__link" href="#servicios">Servicios</a></li>
+        <li class="nav__item"><a class="nav__link" href="#productos">Productos</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="main">
 
-    <section id="inicio" aria-labelledby="hero-titulo">
-      <h1 id="hero-titulo">Soluciones tecnológicas para tu negocio</h1>
-      <p>
+    <section id="inicio" class="hero" aria-labelledby="hero-titulo">
+      <h1 id="hero-titulo" class="hero__title">Soluciones tecnológicas para tu negocio</h1>
+      <p class="hero__text">
         En TechSolutions te ayudamos a digitalizar tus procesos con herramientas
         modernas, seguras y fáciles de usar. Este proyecto integrador presenta
         nuestros servicios, productos y formas de contacto en una sola plataforma.
       </p>
     </section>
 
-    <section id="servicios" aria-labelledby="servicios-titulo">
-      <h2 id="servicios-titulo">Nuestros servicios</h2>
+    <section id="servicios" class="cards-section" aria-labelledby="servicios-titulo">
+      <h2 id="servicios-titulo" class="cards-section__title">Nuestros servicios</h2>
 
-      <article>
-        <h3>Desarrollo Web</h3>
-        <p>Creamos sitios y aplicaciones web modernas, responsivas y accesibles para cualquier tipo de negocio.</p>
-      </article>
+      <div class="cards">
+        <article class="card">
+          <h3 class="card__title">Desarrollo Web</h3>
+          <p class="card__text">Creamos sitios y aplicaciones web modernas, responsivas y accesibles para cualquier tipo de negocio.</p>
+        </article>
 
-      <article>
-        <h3>Soporte Técnico</h3>
-        <p>Brindamos asistencia técnica remota y presencial para resolver incidencias de manera rápida y eficiente.</p>
-      </article>
+        <article class="card card--featured">
+          <h3 class="card__title">Soporte Técnico</h3>
+          <p class="card__text">Brindamos asistencia técnica remota y presencial para resolver incidencias de manera rápida y eficiente.</p>
+        </article>
 
-      <article>
-        <h3>Consultoría en Sistemas</h3>
-        <p>Analizamos tus procesos actuales y proponemos mejoras tecnológicas adaptadas a tus necesidades.</p>
-      </article>
-
+        <article class="card">
+          <h3 class="card__title">Consultoría en Sistemas</h3>
+          <p class="card__text">Analizamos tus procesos actuales y proponemos mejoras tecnológicas adaptadas a tus necesidades.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="productos" aria-labelledby="productos-titulo">
-      <h2 id="productos-titulo">Productos destacados</h2>
+    <section id="productos" class="cards-section" aria-labelledby="productos-titulo">
+      <h2 id="productos-titulo" class="cards-section__title">Productos destacados</h2>
 
-      <article>
-        <h3>Sistema de Reservas</h3>
-        <p>Plataforma para gestionar reservas de salas y recursos de forma automatizada y sincronizada.</p>
-      </article>
+      <div class="cards">
+        <article class="card">
+          <h3 class="card__title">Sistema de Reservas</h3>
+          <p class="card__text">Plataforma para gestionar reservas de salas y recursos de forma automatizada y sincronizada.</p>
+        </article>
 
-      <article>
-        <h3>Panel de Reportes</h3>
-        <p>Dashboard interactivo para visualizar métricas clave del negocio en tiempo real.</p>
-      </article>
+        <article class="card">
+          <h3 class="card__title">Panel de Reportes</h3>
+          <p class="card__text">Dashboard interactivo para visualizar métricas clave del negocio en tiempo real.</p>
+        </article>
 
-      <article>
-        <h3>Gestor de Inventario</h3>
-        <p>Herramienta para controlar existencias, entradas y salidas de productos de manera sencilla.</p>
-      </article>
-
+        <article class="card">
+          <h3 class="card__title">Gestor de Inventario</h3>
+          <p class="card__text">Herramienta para controlar existencias, entradas y salidas de productos de manera sencilla.</p>
+        </article>
+      </div>
     </section>
 
-    <aside aria-labelledby="aside-titulo">
-      <h2 id="aside-titulo">Noticias y enlaces relacionados</h2>
-      <ul>
-        <li><a href="#servicios">Conoce nuestros nuevos servicios de consultoría</a></li>
-        <li><a href="#productos">Descubre el nuevo Panel de Reportes</a></li>
-        <li><a href="#contacto">Agenda una asesoría gratuita</a></li>
+    <aside class="aside" aria-labelledby="aside-titulo">
+      <h2 id="aside-titulo" class="aside__title">Noticias y enlaces relacionados</h2>
+      <ul class="aside__list">
+        <li class="aside__item"><a class="aside__link" href="#servicios">Conoce nuestros nuevos servicios de consultoría</a></li>
+        <li class="aside__item"><a class="aside__link" href="#productos">Descubre el nuevo Panel de Reportes</a></li>
+        <li class="aside__item"><a class="aside__link" href="#contacto">Agenda una asesoría gratuita</a></li>
       </ul>
     </aside>
 
   </main>
 
-  <footer id="contacto">
-    <h2>Contacto</h2>
-    <address>
+  <footer class="footer" id="contacto">
+    <h2 class="footer__title">Contacto</h2>
+    <address class="footer__contact">
       Correo: <a href="mailto:contacto@techsolutions.com">contacto@techsolutions.com</a><br>
       Teléfono: <a href="tel:+50212345678">+502 1234-5678</a><br>
       Jutiapa, Guatemala
     </address>
-    <p>&copy; <span id="anio"></span> TechSolutions - Proyecto Integrador</p>
+    <p class="footer__copy">&copy; <span id="anio"></span> TechSolutions - Proyecto Integrador</p>
   </footer>
 
   <script>
